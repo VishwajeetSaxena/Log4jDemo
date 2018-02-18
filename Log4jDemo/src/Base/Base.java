@@ -16,7 +16,8 @@ public class Base {
 		logs = new LogInit();
 		log = logs.initLogs();
 
-		// Log Levels: OFF, DEBUG, INFO, ERROR, WARN, FATAL, and ALL.
+		// Log Levels: ALL < DEBUG < INFO < WARN < ERROR < FATAL < OFF.
+		log.trace("This is Trace log");
 		log.debug("This is Debug log");
 		log.info("This is Info log");
 		log.error("This is Error Log");
